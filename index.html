@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST CUPONATIC</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<!--ICONS-->
+	<link rel="stylesheet" href="css/all.min.css">
+	<!--ESTILOS-->
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<header>
+		<div class="head-nav">
+			<div class="head-nav__left">
+				<div class="btn-nav">
+					<i class="fas fa-bars"></i>
+					<span>Menu</span>
+				</div>
+				<div class="logo">
+					<img src="images/logo.svg">
+				</div>
+			</div>
+			<div class="head-nav__right">
+				<div class="btn-nav">
+					<i class="fas fa-search"></i>
+					<span>Buscar</span>
+				</div>
+				<div class="btn-nav">
+					<i class="fas fa-user"></i>
+					<span>Cuenta</span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--BOTONES FILTROS-->
+	<section class="btns-filter">
+		<div class="box-btns">
+			<div class="box-btns__col">
+				<button class="btn-order"><i class="fas fa-sort-amount-down-alt"></i>Orden</button>
+			</div>
+			<div class="box-btns__col">
+				<button class="btn-filter"><i class="fas fa-sliders-h"></i>Filtros</button>
+			</div>
+			<div class="box-btns__col">
+				<button class="btn-map"><i class="fas fa-map"></i>Mapa</button>
+			</div>
+		</div>
+		<div class="result-map">
+			<button class="cerrar"><i class="fas fa-times"></i></button>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107630.23348885699!2d-70.73551822643974!3d-33.42793595239048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1575515648392!5m2!1ses!2scl" frameborder="0" allowfullscreen=""></iframe>
+		</div>
+	</section>
+	<!--/BOTONES FILTROS-->
+
+	<div class="content">
+		<div class="box-product">
+			<div class="box-product__img">
+				<img src="images/img-product.jpg">
+			</div>
+			<div class="box-product__txt">
+				<div class="detail">
+					<div class="detail__name">Entradas Parque KidZania® Adulto + Niño</div>
+					<div class="detail__price">$16.990</div>
+					<div class="detail__price-before">$16.990</div>
+				</div>
+			</div>
+		</div>
+		<div class="box-product">
+			<div class="box-product__img">
+				<img src="images/img-product.jpg">
+			</div>
+			<div class="box-product__txt">
+				<div class="detail">
+					<div class="detail__name">Entradas Parque KidZania® Adulto + Niño</div>
+					<div class="detail__price">$16.990</div>
+					<div class="detail__price-before">$16.990</div>
+				</div>
+			</div>
+		</div>
+		<div class="box-product">
+			<div class="box-product__img">
+				<img src="images/img-product.jpg">
+			</div>
+			<div class="box-product__txt">
+				<div class="detail">
+					<div class="detail__name">Entradas Parque KidZania® Adulto + Niño</div>
+					<div class="detail__price">$16.990</div>
+					<div class="detail__price-before">$16.990</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="resultOrden" class="result-filter">
+		<button class="cerrar"><i class="fas fa-times"></i></button>
+		<div class="result-filter__top">
+			<button class="btn-back"><i class="fas fa-arrow-left"></i></button>
+			<h3>Ordenar por:</h3>
+		</div>
+		<ul class="order-list">
+			<li class="active"><button>Menor precio</button></li>
+			<li><button>Mayor precio</button></li>
+			<li><button>Lo más nuevo</button></li>
+			<li><button>Distancia</button></li>
+		</ul>
+	</div>
+
+	<div id="resultFilter" class="result-filter">
+		<button class="cerrar"><i class="fas fa-times"></i></button>
+		<div class="result-filter__top">
+			<button class="btn-back"><i class="fas fa-arrow-left"></i></button>
+			<h3>Filtrar por</h3>
+		</div>
+		<div class="filter-list">
+			<div class="filter-list__item">
+				<div class="btn-item">Categorías <i class="fas fa-chevron-down"></i></div>
+				<ul class="sub-item">
+					<li>item 1</li>
+					<li>item 2</li>
+					<li>item 3</li>
+				</ul>
+			</div>
+			<div class="filter-list__item">
+				<div class="btn-item">Comunas <i class="fas fa-chevron-down"></i></div>
+				<ul class="sub-item">
+					<li>item 1</li>
+					<li>item 2</li>
+					<li>item 3</li>
+				</ul>
+			</div>
+			<div class="filter-list__item">
+				<div class="btn-item">Distancia <i class="fas fa-chevron-down"></i></div>
+				<ul class="sub-item">
+					<li>item 1</li>
+					<li>item 2</li>
+					<li>item 3</li>
+				</ul>
+			</div>
+			<div class="filter-list__item">
+				<div class="btn-item">Rango de distancia <i class="fas fa-chevron-down"></i></div>
+				<ul class="sub-item">
+					<li>item 1</li>
+					<li>item 2</li>
+					<li>item 3</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

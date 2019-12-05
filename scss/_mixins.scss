@@ -1,0 +1,34 @@
+//Selection
+@mixin selection {
+	&::selection {
+		@content;
+	}
+	&::-moz-selection {
+		@content;
+	}
+}
+//Placeholder
+@mixin placeholder {
+  &:placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+//Center position absolute
+@mixin center-x {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+@mixin center-y {
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+@mixin center-all {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}

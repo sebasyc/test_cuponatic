@@ -1,0 +1,123 @@
+* { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+h1, h2, h3, h4, p { margin: 0; }
+
+p { padding-bottom: 0.5em; }
+
+ul { padding: 0; margin: 0; list-style: none; }
+
+button { font-size: 100%; font-family: "Lato", sans-serif; }
+
+a:focus, input:focus, button:focus, textarea:focus, select:focus { outline: none; text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active, a:focus { color: inherit; }
+
+html, body { font-size: 100%; font-family: "Lato", sans-serif; margin: 0; }
+
+header { padding: .35em 10px; background-color: #0094de; }
+
+header .head-nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: 0 -.5em; }
+
+header .head-nav__left { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+header .head-nav__right { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+header .head-nav .logo { margin-left: 1em; }
+
+header .head-nav .logo img { max-width: 100%; }
+
+header .head-nav .btn-nav { margin: .5em; color: white; text-align: center; text-transform: uppercase; font-weight: 300; }
+
+header .head-nav .btn-nav i { display: block; font-size: 1.5em; }
+
+header .head-nav .btn-nav span { display: block; padding: .35em 0 0; font-size: .65em; }
+
+.btns-filter { position: relative; padding: 1em 10px; background-color: white; }
+
+.btns-filter .box-btns { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 -5px; }
+
+.btns-filter .box-btns__col { width: 33.33333%; padding: 0 5px; }
+
+.btns-filter .box-btns__col button { display: block; width: 100%; padding: .45em 0; background-color: white; border: 1px solid #0094de; border-radius: 10px; font-size: 1em; color: #0094de; -webkit-transition: .3s; transition: .3s; }
+
+.btns-filter .box-btns__col button:active { -webkit-transform: scale(1.05); transform: scale(1.05); }
+
+.btns-filter .box-btns__col button i { display: inline-block; padding-right: .5em; }
+
+.btns-filter .box-btns__col button.active { background-color: #0094de; color: white; }
+
+.content { padding: 0 5px; }
+
+@media (min-width: 768px) { .content { display: -webkit-box; display: -ms-flexbox; display: flex; } }
+
+.content .box-product { margin: 0 0 1.5em; background-color: white; border-radius: 15px; }
+
+@media (min-width: 768px) { .content .box-product { margin: 0 10px 1.5em; } }
+
+.content .box-product__img { max-height: 180px; margin: -5px; overflow: hidden; }
+
+@media (min-width: 768px) { .content .box-product__img { margin: 0; } }
+
+.content .box-product__img img { width: 100%; }
+
+.content .box-product__txt { position: relative; padding: .5em 1em 2.25em; margin-top: -45px; background-color: white; border-radius: 15px; -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
+
+@media (min-width: 768px) { .content .box-product__txt { margin-top: 0; border-radius: 0; } }
+
+.content .box-product__txt .detail__name { font-size: 1em; color: #666666; font-weight: 700; }
+
+.content .box-product__txt .detail__price { padding: .25em 0 0; font-size: 1.5em; color: #fb7500; font-weight: 700; }
+
+.content .box-product__txt .detail__price-before { font-size: .875em; color: #999999; }
+
+.cerrar { position: absolute; width: 25px; height: 25px; padding: 0; background-color: transparent; border: none; top: 10px; right: 10px; font-size: 1.5em; color: #0094de; text-align: center; line-height: 25px; z-index: 1; }
+
+.result-filter { position: fixed; width: 100%; height: 100%; background-color: white; bottom: -100%; opacity: 0; left: 0; z-index: 2; -webkit-transition: .5s; transition: .5s; }
+
+.result-filter.open { bottom: 0; opacity: 1; }
+
+.result-filter__top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 1em; }
+
+.result-filter__top .btn-back { padding: 0; margin-right: 1em; background-color: transparent; border: none; font-size: 1.35em; color: #0094de; }
+
+.result-filter__top h3 { font-size: 1.25em; color: #666666; font-weight: 700; }
+
+.result-filter .order-list { padding: 1em 0 0; }
+
+.result-filter .order-list li { position: relative; padding: .75em 1.5em; }
+
+.result-filter .order-list li:not(:last-child) { border-bottom: 1px solid #d4d4d4; }
+
+.result-filter .order-list li button { padding: 0; background-color: transparent; border: none; color: #666666; font-weight: 700; }
+
+.result-filter .order-list li.active:before { content: ""; position: absolute; width: 8px; height: 100%; background-color: #0094de; top: 0; left: 0; }
+
+.result-filter .order-list li.active button { color: #0094de; font-weight: 700; }
+
+.result-filter .filter-list { padding: 1em 0 0; }
+
+.result-filter .filter-list__item { border-top: 1px solid #d4d4d4; }
+
+.result-filter .filter-list__item:last-child { border-bottom: 1px solid #d4d4d4; }
+
+.result-filter .filter-list__item .btn-item { position: relative; padding: .75em 1.5em; color: #666666; font-weight: 700; }
+
+.result-filter .filter-list__item .btn-item i { position: absolute; width: 20px; height: 20px; right: 1.5em; color: #0094de; text-align: center; line-height: 20px; -webkit-transition: .3s; transition: .3s; top: 0; bottom: 0; margin: auto 0; }
+
+.result-filter .filter-list__item .sub-item { display: none; padding: .25em 2em 1em; }
+
+.result-filter .filter-list__item .sub-item li { padding: .25em 1em; color: #999999; }
+
+.result-filter .filter-list__item.active .btn-item i { -webkit-transform: rotate(-180deg); transform: rotate(-180deg); }
+
+.result-map { position: absolute; width: 100%; height: 85vh; display: none; top: 67px; left: 0; z-index: 2; -webkit-transition: .5s; transition: .5s; }
+
+.result-map.open { display: block; }
+
+.result-map .cerrar { width: 35px; height: 35px; background-color: #0094de; border-radius: 100%; font-size: 1.25em; color: white; line-height: 35px; }
+
+.result-map iframe { position: relative; width: 100%; height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
